@@ -53,7 +53,7 @@ function Dashboard() {
                 percentage={{
                   color: "success",
                   amount: "+55%",
-                  label: "than lask week",
+                  label: "más que la semana pasada",
                 }}
               />
             </MDBox>
@@ -67,7 +67,7 @@ function Dashboard() {
                 percentage={{
                   color: "success",
                   amount: "+3%",
-                  label: "than last month",
+                  label: "más que el mes pasado",
                 }}
               />
             </MDBox>
@@ -82,7 +82,7 @@ function Dashboard() {
                 percentage={{
                   color: "success",
                   amount: "+1%",
-                  label: "than yesterday",
+                  label: "más que ayer",
                 }}
               />
             </MDBox>
@@ -97,7 +97,7 @@ function Dashboard() {
                 percentage={{
                   color: "success",
                   amount: "",
-                  label: "Just updated",
+                  label: "Recién actualizado",
                 }}
               />
             </MDBox>
@@ -109,9 +109,9 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsBarChart
                   color="info"
-                  title="website views"
-                  description="Last Campaign Performance"
-                  date="campaign sent 2 days ago"
+                  title="Visitas al sitio"
+                  description="Rendimiento de la última campaña"
+                  date="campaña enviada hace 2 días"
                   chart={reportsBarChartData}
                 />
               </MDBox>
@@ -120,13 +120,13 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="success"
-                  title="daily sales"
+                  title="Ventas diarias"
                   description={
                     <>
-                      (<strong>+15%</strong>) increase in today sales.
+                      (<strong>+15%</strong>) de aumento en las ventas de hoy.
                     </>
                   }
-                  date="updated 4 min ago"
+                  date="actualizado hace 4 min"
                   chart={sales}
                 />
               </MDBox>
@@ -135,9 +135,9 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="dark"
-                  title="completed tasks"
-                  description="Last Campaign Performance"
-                  date="just updated"
+                  title="Tareas completadas"
+                  description="Rendimiento de la última campaña"
+                  date="recién actualizado"
                   chart={tasks}
                 />
               </MDBox>
