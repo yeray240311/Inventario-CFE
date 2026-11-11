@@ -21,9 +21,9 @@ Coded by www.creative-tim.com
 
 const colors = {
   background: {
-    default: "#1a2035",
-    sidenav: "#1f283e",
-    card: "#202940",
+    default: "#0e211c",
+    sidenav: "#12291f",
+    card: "#163029",
   },
 
   text: {
@@ -47,8 +47,8 @@ const colors = {
   },
 
   primary: {
-    main: "#e91e63",
-    focus: "#e91e63",
+    main: "#00a672",
+    focus: "#008e60",
   },
 
   secondary: {
@@ -57,8 +57,8 @@ const colors = {
   },
 
   info: {
-    main: "#1A73E8",
-    focus: "#1662C4",
+    main: "#c9a24a",
+    focus: "#a57f2c",
   },
 
   success: {
@@ -82,8 +82,8 @@ const colors = {
   },
 
   dark: {
-    main: "#344767",
-    focus: "#2c3c58",
+    main: "#153e36",
+    focus: "#102f29",
   },
 
   grey: {
@@ -100,8 +100,8 @@ const colors = {
 
   gradients: {
     primary: {
-      main: "#EC407A",
-      state: "#D81B60",
+      main: "#00a672",
+      state: "#007a53",
     },
 
     secondary: {
@@ -110,8 +110,8 @@ const colors = {
     },
 
     info: {
-      main: "#49a3f1",
-      state: "#1A73E8",
+      main: "#b8923f",
+      state: "#8f6c1f",
     },
 
     success: {
@@ -135,8 +135,8 @@ const colors = {
     },
 
     dark: {
-      main: "#323a54",
-      state: "#1a2035",
+      main: "#1d4a3f",
+      state: "#0e211c",
     },
   },
 
@@ -204,8 +204,8 @@ const colors = {
 
   badgeColors: {
     primary: {
-      background: "#f8b3ca",
-      text: "#cc084b",
+      background: "#a8e0cc",
+      text: "#006b49",
     },
 
     secondary: {
@@ -214,8 +214,8 @@ const colors = {
     },
 
     info: {
-      background: "#aecef7",
-      text: "#095bc6",
+      background: "#ead9ae",
+      text: "#7a5c16",
     },
 
     success: {
@@ -245,9 +245,9 @@ const colors = {
   },
 
   coloredShadows: {
-    primary: "#e91e62",
+    primary: "#008e60",
     secondary: "#110e0e",
-    info: "#00bbd4",
+    info: "#a57f2c",
     success: "#4caf4f",
     warning: "#ff9900",
     error: "#f44336",

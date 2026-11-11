@@ -21,12 +21,12 @@ Coded by www.creative-tim.com
 
 const colors = {
   background: {
-    default: "#f0f2f5",
+    default: "#eef3f0",
   },
 
   text: {
-    main: "#7b809a",
-    focus: "#7b809a",
+    main: "#5d6a66",
+    focus: "#5d6a66",
   },
 
   transparent: {
@@ -45,8 +45,8 @@ const colors = {
   },
 
   primary: {
-    main: "#e91e63",
-    focus: "#e91e63",
+    main: "#008e60",
+    focus: "#007a53",
   },
 
   secondary: {
@@ -55,8 +55,8 @@ const colors = {
   },
 
   info: {
-    main: "#1A73E8",
-    focus: "#1662C4",
+    main: "#a57f2c",
+    focus: "#8a6a22",
   },
 
   success: {
@@ -80,8 +80,8 @@ const colors = {
   },
 
   dark: {
-    main: "#344767",
-    focus: "#2c3c58",
+    main: "#153e36",
+    focus: "#102f29",
   },
 
   grey: {
@@ -98,8 +98,8 @@ const colors = {
 
   gradients: {
     primary: {
-      main: "#EC407A",
-      state: "#D81B60",
+      main: "#00a672",
+      state: "#007a53",
     },
 
     secondary: {
@@ -108,8 +108,8 @@ const colors = {
     },
 
     info: {
-      main: "#49a3f1",
-      state: "#1A73E8",
+      main: "#b8923f",
+      state: "#8f6c1f",
     },
 
     success: {
@@ -133,8 +133,8 @@ const colors = {
     },
 
     dark: {
-      main: "#42424a",
-      state: "#191919",
+      main: "#1d4a3f",
+      state: "#0f2d26",
     },
   },
 
@@ -202,8 +202,8 @@ const colors = {
 
   badgeColors: {
     primary: {
-      background: "#f8b3ca",
-      text: "#cc084b",
+      background: "#a8e0cc",
+      text: "#006b49",
     },
 
     secondary: {
@@ -212,8 +212,8 @@ const colors = {
     },
 
     info: {
-      background: "#aecef7",
-      text: "#095bc6",
+      background: "#ead9ae",
+      text: "#7a5c16",
     },
 
     success: {
@@ -237,20 +237,20 @@ const colors = {
     },
 
     dark: {
-      background: "#8097bf",
-      text: "#1e2e4a",
+      background: "#9dbcb1",
+      text: "#0f2d26",
     },
   },
 
   coloredShadows: {
-    primary: "#e91e62",
+    primary: "#008e60",
     secondary: "#110e0e",
-    info: "#00bbd4",
+    info: "#a57f2c",
     success: "#4caf4f",
     warning: "#ff9900",
     error: "#f44336",
     light: "#adb5bd",
-    dark: "#404040",
+    dark: "#153e36",
   },
 
   inputBorderColor: "#d2d6da",

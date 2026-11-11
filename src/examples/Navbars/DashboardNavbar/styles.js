@@ -16,13 +16,16 @@ function navbar(theme, ownerState) {
   const { palette, boxShadows, functions, transitions, breakpoints, borders } = theme;
   const { transparentNavbar, absolute, light, darkMode } = ownerState;
 
-  const { dark, white, text, transparent, background } = palette;
+  const { dark, white, text, transparent, background, info } = palette;
   const { navbarBoxShadow } = boxShadows;
   const { rgba, pxToRem } = functions;
   const { borderRadius } = borders;
 
   return {
-    boxShadow: transparentNavbar || absolute ? "none" : navbarBoxShadow,
+    boxShadow:
+      transparentNavbar || absolute
+        ? "none"
+        : `inset 0 ${pxToRem(3)} 0 0 ${info.main}, ${navbarBoxShadow}`,
     backdropFilter: transparentNavbar || absolute ? "none" : `saturate(200%) blur(${pxToRem(30)})`,
     backgroundColor:
       transparentNavbar || absolute
