@@ -27,6 +27,16 @@ import Icon from "@mui/material/Icon";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 
+// Nombres en español para los segmentos de la ruta
+const routeNames = {
+  dashboard: "Inicio",
+  tables: "Activos",
+  authentication: "Autenticación",
+  "sign-in": "Iniciar sesión",
+};
+
+const translate = (segment) => routeNames[segment] || segment.replace("-", " ");
+
 function Breadcrumbs({ icon, title, route, light }) {
   const routes = route.slice(0, -1);
 
@@ -61,7 +71,7 @@ function Breadcrumbs({ icon, title, route, light }) {
               opacity={light ? 0.8 : 0.5}
               sx={{ lineHeight: 0 }}
             >
-              {el}
+              {translate(el)}
             </MDTypography>
           </Link>
         ))}
@@ -72,7 +82,7 @@ function Breadcrumbs({ icon, title, route, light }) {
           color={light ? "white" : "dark"}
           sx={{ lineHeight: 0 }}
         >
-          {title.replace("-", " ")}
+          {translate(title)}
         </MDTypography>
       </MuiBreadcrumbs>
       <MDTypography
@@ -82,7 +92,7 @@ function Breadcrumbs({ icon, title, route, light }) {
         color={light ? "white" : "dark"}
         noWrap
       >
-        {title.replace("-", " ")}
+        {translate(title)}
       </MDTypography>
     </MDBox>
   );
