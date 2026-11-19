@@ -38,7 +38,9 @@ Coded by www.creative-tim.com
 // Material Dashboard 2 React layouts
 import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
+import Refacciones from "layouts/refacciones";
 import SignIn from "layouts/authentication/sign-in";
+import Personal from "layouts/personal";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -59,6 +61,22 @@ const routes = [
     icon: <Icon fontSize="small">table_view</Icon>,
     route: "/tables",
     component: <Tables />,
+  },
+  {
+    type: "collapse",
+    name: "Refacciones",
+    key: "refacciones",
+    icon: <Icon fontSize="small">inventory_2</Icon>,
+    route: "/refacciones",
+    component: <Refacciones />,
+  },
+  {
+    type: "collapse",
+    name: "Personal",
+    key: "personal",
+    icon: <Icon fontSize="small">groups</Icon>,
+    route: "/personal",
+    component: <Personal />,
   },
   {
     type: "collapse",
