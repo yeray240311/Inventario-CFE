@@ -1,0 +1,33 @@
+// Pega este contenido en https://dbdiagram.io/d  (botón "Create your diagram")
+// Relaciones: un activo tiene muchos servicios; un usuario registra muchos servicios.
+
+Table usuarios {
+  id integer [pk, increment]
+  nombre varchar(100) [not null]
+  correo varchar(120) [not null, unique]
+  contrasena_hash varchar(255) [not null, note: 'Nunca se guarda la contraseña en texto plano']
+  rol varchar(30) [not null, default: 'usuario', note: 'administrador | usuario']
+  creado_en timestamp [not null, default: `now()`]
+}
+
+Table activos {
+  id integer [pk, increment]
+  marca varchar(60) [not null]
+  modelo varchar(80) [not null]
+  numero_serie varchar(80) [not null, unique]
+  ubicacion varchar(120) [not null]
+  estado varchar(30) [not null, default: 'En uso', note: 'En uso | En mantenimiento | Dado de baja']
+  responsable varchar(100) [not null]
+  creado_en timestamp [not null, default: `now()`]
+}
+
+Table servicios {
+  id integer [pk, increment]
+  activo_id integer [not null, ref: > activos.id]
+  usuario_id integer [not null, ref: > usuarios.id, note: 'Quién registró el servicio']
+  tipo varchar(20) [not null, note: 'mantenimiento | revision | reparacion']
+  fecha date [not null]
+  descripcion text [not null]
+  costo numeric(10,2) [default: 0]
+  creado_en timestamp [not null, default: `now()`]
+}
